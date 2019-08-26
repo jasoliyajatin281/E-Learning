@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E-Learning</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="js/style.js"></script> 
+  <link rel="icon" href="img/shop-now.jpg" type="image/gif" sizes="25x25">
+</head>
+<body>
+    <div class="flex-container">
+        <i  onclick="topFunction()" id="scrollbtn" title="Go to top" class="fas fa-arrow-circle-up"></i>
+        
+        <nav class="colnavbar">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <ul class="colnav">
+                <li class="closebtn" onclick="shownav(false)"> &times; </li>
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="about.html">About Us</a></li>
+                <li ><a href="pricing.html">Pricing</a></li>
+                <li ><a href="courses.html">Courses</a></li>
+                <li ><a href="contact.html">Contact</a></li>
+                <li ><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+               <div id="id01" class="modal">                    
+                    <form class="modal-content animate" action="#">  
+                      <div class="login-container">
+                        <h1>Login to Your Account</h1>
+                        </i><input class="logininput" type="text" placeholder="Enter Username" name="uname" required>
+                        <input class="logininput" type="password" placeholder="Enter Password" name="psw" required>                          
+                        <button class="Loginbtn" type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                         <a class="psw" href="#">Forgot password?</a>                       
+                      </div>
+                      <div class="login-container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <a class="Signuptxt" href="#">New Here ?  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signupbtn">SignUp</button></a>
+                      </div>
+                    </form>
+                </div>
+            </ul>
+            <a class="material-icons togglebtn" onclick="shownav(true)" ><i class="fas fa-bars"></i></a>
+        </nav>
+         
+        <section>
+          <div class="video-container">
+              <video autoplay muted loop id="myVideo">
+              <source src="img/Coffee%20Shop%20tablet.mp4" type="video/mp4">
+            </video>
+              <div class="overlay">                 
+                  <form>
+                    <h1> Bring learning to people</h1>
+                    <p>We need to bring learning to people instead of people to learning.</p>
+                     <a href="https://en.wikipedia.org/wiki/E-learning_(theory)" target="_blank" class="c-button c-button2">Learn More</a> 
+                  </form>
+              </div>
+          </div>
+        </section>
+        <main>
+        <div class="Home-main">           
+            <section class="section-1">
+                <div class="section-1-row">
+                  <div class="section-1-column">
+                    <i class="fas fa-users"></i>
+                    <p class="section-1-icon">Over 40 million Students</p>
+                  </div>
+                  <div class="section-1-column">
+                    <i class="fas fa-bookmark"></i>
+                    <p class="section-1-icon">More Than 20,000 courses</p>
+                  </div>
+                  <div class="section-1-column">
+                   <i class="fas fa-phone"></i>
+                    <p class="section-1-icon">Free contact anytime</p>
+                  </div>
+                    <div class="section-1-column">
+                   <i class="fas fa-chart-line"></i>
+                    <p class="section-1-icon">Learn  on any device</p>
+                  </div>
+                </div>
+            </section>
+
+            <section class="section-2">      
+                <div class="heading">
+                    <h2>MOST POPULAR COURSES</h2>
+                </div>
+                <div class="responsive">
+                  <div class="gallery">
+                    <a href="#" target="_blank" href="img/courses-img1.jpg">
+                      <img src="img/courses-img1.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="course-details">
+                          <a href="#">
+                              <h6>Website Designing and Development <br> 2017-2018</h6>
+                          </a>
+                          <p>By : Santosh Gajera</p>
+                          <div class="star">
+                              <i class="fa fa-star star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                          </div>
+                          <div class="courses-price">
+                              $120 <span>$250</span>
+                          </div>
+                           <a href="#"><button class="buynow">Buy Now</button></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a href="#" target="_blank" href="img/courses-img1.jpg">
+                      <img src="img/courses-img2.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="course-details">
+                            <a href="#">
+                                <h6>Java Development and Services <br> 2017-2018</h6>
+                            </a>
+                            <p>By : Jatin Jasoliya</p>
+                            <div class="star">
+                                <i class="fa fa-star star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="courses-price">
+                                $150 <span>$300</span>
+                            </div>
+                             <a href="#"><button class="buynow">Buy Now</button></a>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a href="#" target="_blank" href="img/courses-img1.jpg">
+                      <img src="img/courses-img3.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="course-details">
+                            <a href="#">
+                                <h6>WordPress Development & Customization <br> 2017-2018</h6>
+                            </a>
+                            <p>By : Ashu Patel</p>
+                            <div class="star">
+                                <i class="fa fa-star star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="courses-price">
+                                $180 <span>$350</span>
+
+                            </div>
+                           <a href="#"><button class="buynow">Buy Now</button></a>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a href="#" target="_blank" href="img/courses-img1.jpg">
+                      <img src="img/courses-img4.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="course-details">
+                            <a href="#">
+                                <h6>Social Media Marketing (SMM) <br> 2017-2018</h6>
+                            </a>
+                            <p>By : Avikash Badhan</p>
+                            <div class="star">
+                                <i class="fa fa-star star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="courses-price">
+                                $230 <span>$400</span>
+                            </div>
+                          <a href="#"><button class="buynow">Buy Now</button></a>
+                        </div>
+                  </div>
+                </div>
+
+            </section>
+
+            <section class="section-3">
+              <h2>Don’t miss anything online<br> Enjoy our live classes and booked your seat</h2>
+              <a href="courses.html" class="browse-button browse-button2">View All Courses</a>
+            </section>
+
+            <section class="section-4">
+                <div class="heading">
+                    <h2>MEET OUR INSTRUCTOR</h2>
+                </div>                
+                <div class="section-4-row">
+                  <div class="section-4-column">
+                      <img src="img/img_avatar2.png" alt="Teacher 1">
+                    <h2>Santosh Gajera</h2>
+                    <p>I am a Passionate and Professional Native Java based application developer having more than 2 years of experience in developing android and ios applications.<span id="dots">...</span><span id="more">I have worked with companies from startups to mid-sized companies and large enterprises and I believe that it's not the money that drives you but the satisfaction in your work that keeps you motivated all the time and helps in developing quality apps for the clients. Good intention and excellent planning alongwith sincere efforts and skillful execution is what makes a job perfect.</span></p>
+                      <button onclick="myFunction1()" id="myBtn" class="btn success" >Read More</button>
+
+                  </div>
+                    <div class="section-4-column">
+                      <img  src="img/img_avatar.png" alt="Teacher 1">
+                    <h2>Jatin Jasoliya</h2>
+                    <p>I am a Passionate and Professional Native Java based application developer having more than 2 years of experience in developing android and ios applications.<span id="dots2">...</span><span id="more2">I have worked with companies from startups to mid-sized companies and large enterprises and I believe that it's not the money that drives you but the satisfaction in your work that keeps you motivated all the time and helps in developing quality apps for the clients. Good intention and excellent planning alongwith sincere efforts and skillful execution is what makes a job perfect.</span></p>
+                        <button onclick="myFunction2()" id="myBtn2" class="btn success" >Read More</button>
+                  </div>
+                    <div class="section-4-column">
+                      <img  src="img/img_avatar.png" alt="Teacher 1">
+                    <h2>Ashu Patel</h2>
+                    <p>I am a Passionate and Professional Native Java based application developer having more than 2 years of experience in developing android and ios applications.<span id="dots3">...</span><span id="more3">I have worked with companies from startups to mid-sized companies and large enterprises and I believe that it's not the money that drives you but the satisfaction in your work that keeps you motivated all the time and helps in developing quality apps for the clients. Good intention and excellent planning alongwith sincere efforts and skillful execution is what makes a job perfect.</span></p>
+                        <button onclick="myFunction3()" id="myBtn3" class="btn success" >Read More</button>
+                  </div>
+                </div>
+            </section>
+        </div>
+      </main>
+        <div class="footer">
+          <section class="section-5">
+            <div class="footer-container">                
+                  <div  class="footer-left" style="flex-grow: 1">
+                      <img class="logofooter" src="img/Logofooter.png" alt="logo">
+                      <h2><a href="#">299 Doon Valley Drive<br> Kitchener, Ontario N2G4M4<br>CANADA.</a></h2>
+                      <h2><a href="tel:2268996424">Phone: (+1) 226-899-6424</a></h2>
+                      <h2><a href="mailto:info.e-Learning.com">Info.e-Learning.com</a></h2>
+                      <h2><a href="tel:2268996424">TTY: 1-866-463-4484</a></h2>
+                  </div>
+                  <hr>
+                  <div class="footer-center" style="flex-grow: 6">
+                      <h2>Subscribe to our Newsletter</h1>            
+                      <p>Sign up to get latest update on sales, release and more...</p>
+                      <div>
+                          <form action="#">
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                            <input type="text" id="fname" name="firstname" placeholder="Email">
+                              <label>
+                                <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                              </label>
+                            <input type="submit" value="Submit">
+                          </form>
+                        </div>
+                  </div>
+                  <hr>
+                   <div  class="footer-right" style="flex-grow: 2">
+                       <div>
+                          <h2>FOLLOW US ON</h2> 
+                          <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                          <a target="_blank" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                          <a target="_blank" href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a>
+                          <a target="_blank" href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                          <a target="_blank" href="https://www.linkedin.com/uas/login"><i class="fab fa-linkedin-in"></i></a>
+                          <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+            </div>
+           </section>
+           <section class="section-6">
+            <h4 class="copy">COPY&copy;2018 E-LEARNING | All RIGHT RESERVED</h4>
+         </section>
+        </div>
+    </div>
+</body>    
+</html>

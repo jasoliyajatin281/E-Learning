@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>E-Contact-US</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="js/style.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="img/shop-now.jpg" type="image/gif" sizes="25x25">
+</head>    
+<body>
+    <div class="flex-container">
+       <i  onclick="topFunction()" id="scrollbtn" title="Go to top" class="fas fa-arrow-circle-up"></i>
+          <nav class="colnavbar">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        <ul class="colnav">
+            <li class="closebtn" onclick="shownav(false)"> &times; </li>
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="about.html">About Us</a></li>
+            <li ><a href="pricing.html">Pricing</a></li>
+            <li ><a href="courses.html">Courses</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+            <li ><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+           <div id="id01" class="modal">
+                
+                <form class="modal-content animate" action="#">
+                 
+
+                  <div class="login-container">
+                    <h1>Login to Your Account</h1>
+                    <input class="logininput" type="text" placeholder="Enter Username" name="uname" required>
+                    <input class="logininput" type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button class="Loginbtn" type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                     <a class="psw" href="#">Forgot password?</a>
+                   
+                  </div>
+
+                  <div class="login-container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <a class="Signuptxt" href="#">New Here ?  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signupbtn">SignUp</button></a>
+                  </div>
+                </form>
+              </div>
+              
+        </ul>
+        <a class="material-icons togglebtn" onclick="shownav(true)" ><i class="fas fa-bars"></i></a>
+    </nav>
+         
+      <div class="main">
+         <section>
+              <div class="bg-img">
+                        <img src="img/contact-1.jfif">
+                </div>
+         </section>
+          <section>                   
+            
+              <div class="contact-container">
+                <div style="text-align:center">
+                </div>
+                <div class="contact-row">
+                  <div class="contact-column-left">
+                    <div class="contact-address">
+                      <h2>Address for correspondence</h2>
+                            <div class="address1"> 
+                              <h4>E-learning, UAB</h4>
+                              <p>Europos 32-4, 46326<br> Kaunas, Lithuania</p>
+                            </div>
+                            <div class="address1">
+                              <h4>E-learning International Ltd.</h4>
+                              <p>61 Lordou Vironos Street<br> 6023 Larnaca, Cyprus</p>
+                            </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3651391952158!2d-80.40541498421068!3d43.39029697913126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga+College!5e0!3m2!1sen!2sca!4v1533050395721" width="60%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  </div>
+                  <div class="contact-column-right">
+                    <form onsubmit="myFunction()" name="form1" method="POST">
+                      <h2>Write to us</h2>
+                  <p>Send us your requirements and we shall get in touch with you within next 24 hours</p>
+                      
+                      <input class="contact-input" type="text" name="item" id="name" class="input" maxlength="50"  pattern="[A-Za-z\\s]*" placeholder="First Name" required>                     
+                      <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                      <input class="contact-input" type="email" id="email" name="email" placeholder="Someone@example.com" required>                     
+                      <input class="contact-input" type="tel" id="phonenum" name="field" placeholder="999-999-9999" pattern="^\d{3}-\d{3}-\d{4}$" required>
+
+
+                     <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+
+                     <div id="locationField">
+                      <input class="contact-input" id="autocomplete" placeholder="Search Your Address"
+                             onFocus="geolocate()" type="text" required></input>
+                    </div>
+
+                    <div id="address">
+                          <input class="field contact-input" id="street_number" disabled="true" placeholder="Street Number"></input>
+                          <input class="field contact-input" id="route" disabled="true" placeholder="Street Name"></input>  
+                          <input class="field contact-input" id="locality" disabled="true" placeholder="City"></input>  
+                          <input class="field contact-input" id="administrative_area_level_1" disabled="true" placeholder="State"></input>
+                          <input class="field contact-input" id="postal_code" disabled="true" placeholder="Zip code"></input>       
+                          <input class="field contact-input" id="country" disabled="true" placeholder="Country"></input>                      
+                    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0XWQ5NnQlzS1Ci4G1PzWA7y2pJVRgM7Y&libraries=places&callback=initAutocomplete"
+        async defer></script>
+                     <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+                   
+                      <textarea class="contact-textarea" id="subject" name="subject" placeholder="Write something.." style="height:170px"  required></textarea>
+                      <input class="contact-submit" type="submit" value="Send Message">
+                      <div id="snackbar">Message Sent Successfully</div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </section>
+          
+         
+        <div class="footer">
+          <section class="section-5">
+            <div class="footer-container">                
+                  <div  class="footer-left" style="flex-grow: 1">
+                      <img class="logofooter" src="img/Logofooter.png" alt="logo">
+                      <h2><a href="#">299 Doon Valley Drive<br> Kitchener, Ontario N2G4M4<br>CANADA.</a></h2>
+                      <h2><a href="tel:2268996424">Phone: (+1) 226-899-6424</a></h2>
+                      <h2><a href="mailto:info.e-Learning.com">Info.e-Learning.com</a></h2>
+                      <h2><a href="tel:2268996424">TTY: 1-866-463-4484</a></h2>
+                  </div>
+                  <hr>
+                  <div class="footer-center" style="flex-grow: 6">
+                      <h2>Subscribe to our Newsletter</h1>            
+                      <p>Sign up to get latest update on sales, release and more...</p>
+                      <div>
+                          <form action="#">
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                            <input type="text" id="fname" name="firstname" placeholder="Email">
+                              <label>
+                                <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                              </label>
+                            <input type="submit" value="Submit">
+                          </form>
+                        </div>
+                  </div>
+                  <hr>
+                   <div  class="footer-right" style="flex-grow: 2">
+                       <div>
+                          <h2>FOLLOW US ON</h2>            
+                         <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                          <a target="_blank" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                          <a target="_blank" href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a>
+                          <a target="_blank" href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                          <a target="_blank" href="https://www.linkedin.com/uas/login"><i class="fab fa-linkedin-in"></i></a>
+                          <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+            </div>
+           </section>
+           <section class="section-6">
+            <h4 class="copy">COPY&copy;2018 E-LEARNING | All RIGHT RESERVED</h4>
+         </section>
+        </div>
+    </div>
+    <script>
+        
+
+           function verify(){
+     var value = document.forms[0].item.value; // or
+replace document.forms[0].item by document.getElementById('name')
+     var objective = "I'm a duck";
+     if(objective != value){
+         document.forms[0].item.style.color="#FF3300";
+         return false;
+     } else {
+         document.forms[0].item.style.color="lightgreen";
+     }
+
+     if(objective != value){
+         document.forms[1].item.style.color="#FF3300";
+         return false;
+     } else {
+         document.forms[1].item.style.color="lightgreen";
+     }
+     return true;
+ }
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
+
+
+jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});
+$( "#myform" ).validate({
+  rules: {
+    field: {
+      required: true,
+      phoneUS: true
+    }
+  }
+});
+
+    </script>
+</body>
+    
+</html>
